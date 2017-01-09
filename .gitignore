@@ -1,5 +1,6 @@
 .AppleDouble/
 extras/.AppleDouble/
+.idea
 
 
 # Byte-compiled / optimized / DLL files
@@ -91,5 +92,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-.idea

@@ -1,5 +1,6 @@
 class Hand:
     def __init__(self, options):
+
         self.report = options['report']
         self.servo = options['servo']
 
