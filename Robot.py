@@ -1,21 +1,14 @@
-from lib.Hand import Hand
-from lib.Servo import Servo
-from lib.Report import Report
+from components import Report, Servo, Hand
 
 
 class Robot:
     def __init__(self):
-        print("Initializing Robot")
+        report = Report()
+        self.servo = Servo(report)
 
         config = {
-            'report': Report()
+            'report': report,
+            'servo': self.servo,
         }
 
-        servo = Servo(config)
-        hand = Hand(config)
-
-        hand.close()
-        hand.open()
-
-        hand.position(12)
-
+        self.hand = Hand(config)
