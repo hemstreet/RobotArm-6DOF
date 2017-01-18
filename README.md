@@ -6,8 +6,8 @@ In order to get this working, you may need to customize the limits / bounds for 
 For terminal control
 ```
 $ python 
->>> Import Robot
 >>> from Robot import Robot
+>>> robot = Robot()
 ```
 
 Now in that same python repl we can now access the robot and call module's
